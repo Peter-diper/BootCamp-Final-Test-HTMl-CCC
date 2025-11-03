@@ -2,7 +2,8 @@
 .info--wrapper {
   display: flex;
   flex-direction: column;
-  gap: clamp(3.5rem, 3vw, 4rem);
+  gap: clamp(0rem, 3vw, 2rem);
+  padding: 1.2rem;
 }
 .title--wrapper {
   display: flex;

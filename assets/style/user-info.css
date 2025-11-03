@@ -1,0 +1,13 @@
+.user--info__title {
+  font-size: clamp(1.9rem, 2.6vw, 2.2rem);
+  font-weight: 700;
+  margin-bottom: clamp(1.2rem, 2vw, 1.6rem);
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.user--info__title span {
+  font-weight: 300;
+  font-size: clamp(1.8rem, 2.6vw, 1.9rem);
+}
