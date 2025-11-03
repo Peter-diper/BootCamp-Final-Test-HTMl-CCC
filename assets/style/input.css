@@ -5,15 +5,38 @@
   outline: 0;
   font-family: inherit;
   border: 0;
-  background-color: var(--color-gray-300);
+  background-color: var(--color-gray-200);
   border-radius: 4rem;
   transition: all 0.2s ease-in-out;
   padding: clamp(1rem, 4vw, 1.2rem) clamp(1.6rem, 4vw, 1.9rem);
   border: 3px solid transparent;
   font-size: 1.4rem;
   font-weight: 500;
+  color: var(--color-black);
 }
 .form--input:focus {
   outline: 0;
   border: 3px solid var(--color-red-primery--light);
+}
+
+/*form--control */
+.form--controler {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.6rem, 2vw, 1rem);
+}
+
+.input--aria {
+  resize: none;
+  border-radius: 1.2rem;
+  min-height: 10rem;
+}
+.info--block__content:has(.input--aria) {
+  display: flex;
+  flex-direction: column;
+}
+.input--title {
+  font-weight: 500;
+  font-size: 1.4rem;
 }
