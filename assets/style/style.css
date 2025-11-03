@@ -1,0 +1,86 @@
+:root {
+  --color-blue-300: #448cf91a;
+  --color-blue-700: #2e7af1;
+  --color-green-300: #1bac441a;
+  --color-red-300: #e5303f1a;
+  --color-red-primery: #cc312d;
+  --color-red-primery--light: #fcb3b1;
+  --color-red-secondery: #2f0d0c;
+  --color-gray-200: #f7f7f7;
+  --color-gray-300: #1717171a;
+  --color-gray-400: #302f2fa2;
+  --color-gray-600: #494a48;
+  --color-gray-900: #606060;
+  --color-black: #1a1814;
+
+  --font-family: "IRANSansX";
+}
+/* defulte web PX size */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+/*form--control */
+.info--block {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.4rem, 2vw, 1.8rem);
+}
+
+.info--block .title {
+  font-size: clamp(1.6rem, 2vw, 1.8rem);
+  font-weight: 700;
+  color: var(--color-black);
+}
+.info--block__content {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.6rem, 2vw, 1.8rem);
+}
+.form--controler {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.6rem, 2vw, 1rem);
+}
+.input--title {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 64rem) {
+  .info--block__content {
+    flex-direction: row;
+  }
+}
+
+/* info section */
+.info--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3.5rem, 3vw, 4rem);
+}
+.title--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* custom line */
+.line--mobile {
+  align-self: center;
+  width: 93%;
+  display: block;
+  height: 2px;
+  background-color: var(--color-gray-200);
+}
+
+@media screen and (min-width: 64rem) {
+  .line--mobile {
+    display: none;
+  }
+}

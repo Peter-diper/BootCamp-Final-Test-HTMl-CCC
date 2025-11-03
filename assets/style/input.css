@@ -1,0 +1,19 @@
+/* input */
+.form--input {
+  display: block;
+  width: 100%;
+  outline: 0;
+  font-family: inherit;
+  border: 0;
+  background-color: var(--color-gray-300);
+  border-radius: 4rem;
+  transition: all 0.2s ease-in-out;
+  padding: clamp(1rem, 4vw, 1.2rem) clamp(1.6rem, 4vw, 1.9rem);
+  border: 3px solid transparent;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.form--input:focus {
+  outline: 0;
+  border: 3px solid var(--color-red-primery--light);
+}
