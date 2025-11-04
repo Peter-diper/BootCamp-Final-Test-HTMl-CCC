@@ -3,9 +3,11 @@
   --color-blue-700: #2e7af1;
   --color-green-300: #1bac441a;
   --color-red-300: #e5303f1a;
+  --color-red-300: #e5303f1a;
   --color-red-primery: #cc312d;
   --color-red-primery--light: #fcb3b1;
   --color-red-secondery: #2f0d0c;
+  --color-yellow-300: #ebb81140;
   --color-gray-200: #f7f7f7;
   --color-gray-300: #1717171a;
   --color-gray-400: #302f2fa2;
@@ -205,4 +207,57 @@ body {
   font-size: clamp(1.4rem, 2vw, 1.8rem);
   color: var(--color-black--secondery);
   font-weight: 400;
+}
+
+/* payment */
+.payment--block {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: clamp(1.3rem, 3.5vw, 1.7rem) clamp(1rem, 3.5vw, 1.3rem);
+  background-color: white;
+  border-radius: 1.2rem;
+  gap: 0.8rem;
+}
+.payment--img {
+  width: 2.5rem;
+}
+.payment--img__frame {
+  padding: 1.01rem;
+  border-radius: 1.2rem;
+  background-color: var(--color-yellow-300);
+}
+.payment--detail {
+  font-size: clamp(1.2rem, 2vw, 1.3rem);
+  color: var(--color-black);
+}
+
+.payment--detail span {
+  font-weight: 700;
+}
+
+/* btn */
+.btn {
+  display: block;
+  width: 100%;
+  font-size: clamp(1.4rem, 2vw, 1.7rem);
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 1rem 0;
+  text-align: center;
+  outline: none;
+  border: 3px solid transparent;
+  border-radius: 4rem;
+  transition: all 400ms;
+  cursor: pointer;
+}
+.btn--primery {
+  background-color: var(--color-red-primery);
+  color: white;
+  font-family: inherit;
+}
+.btn--primery:hover {
+  background-color: transparent;
+  border: 3px solid var(--color-red-primery);
 }
