@@ -25,7 +25,6 @@ html {
 
 body {
   font-family: var(--font-family);
-  background-color: #2f0d0c;
 }
 * {
   /* transition: all ease-in 0.2s; */
@@ -67,9 +66,27 @@ body {
   }
 }
 
+/* order detail */
+.order--detail--block {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 1.9rem);
+  padding: 2.4rem;
+  background-color: var(--color-gray-200);
+  border-radius: 1.6rem;
+}
+.order--detail__title {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+.order--detail__title span {
+  font-weight: 700;
+  font-size: clamp(1.9rem, 3vw, 2.2rem);
+}
+
 /* order card */
 .order--card {
   display: flex;
+  flex-direction: column;
   gap: 1.2rem;
   align-items: center;
   justify-content: center;
@@ -78,13 +95,26 @@ body {
   padding: 1.7rem 0;
   flex: 0;
 }
+
 .order--img {
   width: clamp(7rem, 9vw, 9rem);
+  object-fit: cover;
 }
 .image--frame {
+  display: flex;
+  justify-content: center;
   background-color: white;
   padding: 1.3rem;
+  width: 100%;
   border-radius: 1.2rem;
+}
+@media screen and (min-width: 25rem) {
+  .order--card {
+    flex-direction: row;
+  }
+  .image--frame {
+    width: auto;
+  }
 }
 .order--card__content {
   display: flex;
@@ -132,8 +162,8 @@ body {
   width: 1.7rem;
 }
 .circle--icon {
-  width: clamp(3rem, 2vw, 4rem);
-  height: clamp(3rem, 2vw, 4rem);
+  width: clamp(4rem, 5vw, 5rem);
+  height: clamp(4rem, 5vw, 5rem);
   border-radius: 100%;
   background-color: white;
   display: flex;
@@ -164,7 +194,6 @@ body {
   background-color: white;
   padding: 1.6rem;
   border-radius: 1.2rem;
-  margin: 2rem auto;
 }
 .total--header {
   display: grid;
