@@ -1,7 +1,7 @@
 .user--info__title {
   font-size: clamp(1.9rem, 2.6vw, 2.2rem);
   font-weight: 700;
-  margin-bottom: clamp(1.2rem, 2vw, 1.6rem);
+  margin-bottom: clamp(2rem, 2vw, 3rem);
   display: flex;
   gap: 0.6rem;
   align-items: center;

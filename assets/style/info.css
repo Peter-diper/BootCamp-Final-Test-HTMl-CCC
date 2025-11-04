@@ -17,6 +17,8 @@
 }
 
 .info--block .title {
+  margin-top: 1.5rem;
+
   font-size: clamp(1.6rem, 2vw, 1.8rem);
   font-weight: 700;
   color: var(--color-black);

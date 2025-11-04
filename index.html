@@ -7,137 +7,214 @@
     <title>Payment Tab</title>
   </head>
   <body>
-    <div class="order--detail--block">
-      <h2 class="order--detail__title"><span>اطلاعات </span>خرید</h2>
-      <!-- order--card -->
-      <div class="oreder--cards--wrapper">
-        <div class="line--form"></div>
-        <div class="order--card">
-          <div class="image--frame">
-            <img
-              src="./assets/img/gold-perfume.png"
-              alt=""
-              class="order--img"
-            />
-          </div>
-          <div class="order--card__content">
-            <div class="card--header">
-              <div class="card--title--wrapper">
-                <h4 class="card--title">Hugo Just Different</h4>
-                <p class="card--description">هوگو بوس جاست دیفرنت </p>
+    <form action="#" method="post" class="payment--form container">
+      <!-- user info -->
+      <section class="user--info">
+        <h2 class="user--info__title">اطلاعات کاربری <span>شما </span></h2>
+        <div class="line--desktop"></div>
+        <div class="info--wrapper">
+          <section class="info--block">
+            <h3 class="title">اطلاعات تحویل گیرنده</h3>
+            <div class="info--block__content">
+              <div class="form--controler">
+                <h4 class="input--title">نام و نام خانوادگی</h4>
+                <input type="text" class="form--input" />
               </div>
-              <span class="order--size">۱۰۰ <span>میل</span></span>
+              <div class="form--controler">
+                <h4 class="input--title">شماره تماس گیرنده</h4>
+                <input type="text" class="form--input" />
+              </div>
             </div>
-            <div class="card--footer">
-              <span class="price">۱,۵۵۰,۰۰۰ <span>تومان</span></span>
-              <div class="edit">
-                <div class="circle--icon plus">+</div>
-                <div class="circle--icon number">۱</div>
-                <div class="circle--icon trash">
-                  <img src="./assets/img/trash.svg" class="trash" alt="" />
+          </section>
+          <div class="line--mobile"></div>
+          <section class="info--block">
+            <div class="title--wrapper">
+              <h3 class="title">آدرس تحویل</h3>
+              <span class="address"><span>+</span> انتخاب آدرس</span>
+            </div>
+            <div class="info--block__content">
+              <div class="form--controler">
+                <h4 class="input--title">استان</h4>
+                <input type="text" class="form--input" />
+              </div>
+              <div class="form--controler">
+                <h4 class="input--title">شهر</h4>
+                <input type="text" class="form--input" />
+              </div>
+            </div>
+            <div class="info--block__content">
+              <div class="form--controler">
+                <h4 class="input--title">پلاک</h4>
+                <input type="text" class="form--input" />
+              </div>
+              <div class="form--controler">
+                <h4 class="input--title">کد پستی</h4>
+                <input type="text" class="form--input" />
+              </div>
+            </div>
+            <div class="info--block__content">
+              <h4 class="input--title">نشانی پستی</h4>
+              <textarea class="form--input input--aria" id=""></textarea>
+            </div>
+          </section>
+        </div>
+        <div class="send--method">
+          <div class="send--method__header">
+            <h2 class="title">انتخاب <span>نحوه ارسال</span></h2>
+            <span class="badge">۳ محصول در سبد خرید</span>
+          </div>
+          <div class="line--desktop"></div>
+          <div class="send--method__footer">
+            <div class="form--input">
+              <div class="service--wraper">
+                <input type="checkbox" class="service--checkbox" />
+                <span class="service">تیپاکس با بیمه (1 تا 3 روز کاری)</span>
+              </div>
+              <span class="price">۴۵,۰۰۰ <span>تومان</span></span>
+            </div>
+            <div class="form--input">
+              <div class="service--wraper">
+                <input type="checkbox" class="service--checkbox" />
+                <span class="service">پست پیشتاز (2 تا 5روز کاری)</span>
+              </div>
+              <span class="price">۸۰,۰۰۰ <span>تومان </span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- order detail  -->
+      <section class="order--detail--block">
+        <h2 class="order--detail__title"><span>اطلاعات </span>خرید</h2>
+        <!-- order--card -->
+        <div class="oreder--cards--wrapper">
+          <div class="line--form"></div>
+          <div class="order--card">
+            <div class="image--frame">
+              <img
+                src="./assets/img/gold-perfume.png"
+                alt=""
+                class="order--img"
+              />
+            </div>
+            <div class="order--card__content">
+              <div class="card--header">
+                <div class="card--title--wrapper">
+                  <h4 class="card--title">Hugo Just Different</h4>
+                  <p class="card--description">هوگو بوس جاست دیفرنت </p>
+                </div>
+                <span class="order--size">۱۰۰ <span>میل</span></span>
+              </div>
+              <div class="card--footer">
+                <span class="price">۱,۵۵۰,۰۰۰ <span>تومان</span></span>
+                <div class="edit">
+                  <div class="circle--icon plus">+</div>
+                  <div class="circle--icon number">۱</div>
+                  <div class="circle--icon trash">
+                    <img src="./assets/img/trash.svg" class="trash" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line--form"></div>
+          <div class="order--card">
+            <div class="image--frame">
+              <img
+                src="./assets/img/gold-perfume.png"
+                alt=""
+                class="order--img"
+              />
+            </div>
+            <div class="order--card__content">
+              <div class="card--header">
+                <div class="card--title--wrapper">
+                  <h4 class="card--title">Hugo Just Different</h4>
+                  <p class="card--description">هوگو بوس جاست دیفرنت </p>
+                </div>
+                <span class="order--size">۱۰۰ <span>میل</span></span>
+              </div>
+              <div class="card--footer">
+                <span class="price">۱,۵۵۰,۰۰۰ <span>تومان</span></span>
+                <div class="edit">
+                  <div class="circle--icon plus">+</div>
+                  <div class="circle--icon number">۱</div>
+                  <div class="circle--icon trash">
+                    <img src="./assets/img/trash.svg" class="trash" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line--form"></div>
+          <div class="order--card">
+            <div class="image--frame">
+              <img
+                src="./assets/img/gold-perfume.png"
+                alt=""
+                class="order--img"
+              />
+            </div>
+            <div class="order--card__content">
+              <div class="card--header">
+                <div class="card--title--wrapper">
+                  <h4 class="card--title">Hugo Just Different</h4>
+                  <p class="card--description">هوگو بوس جاست دیفرنت </p>
+                </div>
+                <span class="order--size">۱۰۰ <span>میل</span></span>
+              </div>
+              <div class="card--footer">
+                <span class="price">۱,۵۵۰,۰۰۰ <span>تومان</span></span>
+                <div class="edit">
+                  <div class="circle--icon plus">+</div>
+                  <div class="circle--icon number">۱</div>
+                  <div class="circle--icon trash">
+                    <img src="./assets/img/trash.svg" class="trash" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="line--form"></div>
-        <div class="order--card">
-          <div class="image--frame">
-            <img
-              src="./assets/img/gold-perfume.png"
-              alt=""
-              class="order--img"
-            />
-          </div>
-          <div class="order--card__content">
-            <div class="card--header">
-              <div class="card--title--wrapper">
-                <h4 class="card--title">Hugo Just Different</h4>
-                <p class="card--description">هوگو بوس جاست دیفرنت </p>
-              </div>
-              <span class="order--size">۱۰۰ <span>میل</span></span>
+        <!-- total price -->
+        <div class="total--block">
+          <div class="total--header">
+            <div class="total--header__content">
+              <span class="total--header__title"> خرید شما:</span>
+              <span class="total--header__price">
+                ۱,۴۵۰,۰۰۰ <span>تومان</span></span
+              >
             </div>
-            <div class="card--footer">
-              <span class="price">۱,۵۵۰,۰۰۰ <span>تومان</span></span>
-              <div class="edit">
-                <div class="circle--icon plus">+</div>
-                <div class="circle--icon number">۱</div>
-                <div class="circle--icon trash">
-                  <img src="./assets/img/trash.svg" class="trash" alt="" />
-                </div>
-              </div>
+            <div class="total--header__content">
+              <span class="total--header__title"> هزینه ارسال:</span>
+              <span class="total--header__price"> ۰ <span>تومان</span></span>
             </div>
           </div>
-        </div>
-        <div class="line--form"></div>
-        <div class="order--card">
-          <div class="image--frame">
-            <img
-              src="./assets/img/gold-perfume.png"
-              alt=""
-              class="order--img"
-            />
-          </div>
-          <div class="order--card__content">
-            <div class="card--header">
-              <div class="card--title--wrapper">
-                <h4 class="card--title">Hugo Just Different</h4>
-                <p class="card--description">هوگو بوس جاست دیفرنت </p>
-              </div>
-              <span class="order--size">۱۰۰ <span>میل</span></span>
-            </div>
-            <div class="card--footer">
-              <span class="price">۱,۵۵۰,۰۰۰ <span>تومان</span></span>
-              <div class="edit">
-                <div class="circle--icon plus">+</div>
-                <div class="circle--icon number">۱</div>
-                <div class="circle--icon trash">
-                  <img src="./assets/img/trash.svg" class="trash" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- total price -->
-      <div class="total--block">
-        <div class="total--header">
-          <div class="total--header__content">
-            <span class="total--header__title"> خرید شما:</span>
-            <span class="total--header__price">
-              ۱,۴۵۰,۰۰۰ <span>تومان</span></span
+          <div class="line--form"></div>
+          <div class="total--footer">
+            <span class="total--footer__title"> مبلغ قابل پرداخت:</span>
+            <span class="total--footer__price">
+              ۸,۴۵۰,۰۰۰ <span>تومان</span></span
             >
           </div>
-          <div class="total--header__content">
-            <span class="total--header__title"> هزینه ارسال:</span>
-            <span class="total--header__price"> ۰ <span>تومان</span></span>
+        </div>
+        <!-- payment -->
+        <div class="payment--block">
+          <div class="payment--img__frame">
+            <img
+              src="./assets/img/Payment Gateway.svg"
+              alt=""
+              class="payment--img"
+            />
           </div>
+          <p class="payment--detail">
+            پرداخت امن با کارت‌های عضو شتاب از طریق <span>درگاه زیبال</span>
+          </p>
         </div>
-        <div class="line--form"></div>
-        <div class="total--footer">
-          <span class="total--footer__title"> مبلغ قابل پرداخت:</span>
-          <span class="total--footer__price">
-            ۸,۴۵۰,۰۰۰ <span>تومان</span></span
-          >
-        </div>
-      </div>
-      <!-- payment -->
-      <div class="payment--block">
-        <div class="payment--img__frame">
-          <img
-            src="./assets/img/Payment Gateway.svg"
-            alt=""
-            class="payment--img"
-          />
-        </div>
-        <p class="payment--detail">
-          پرداخت امن با کارت‌های عضو شتاب از طریق <span>درگاه زیبال</span>
-        </p>
-      </div>
-      <!-- btn -->
-      <button type="submit" class="btn btn--primery">
-        پرداخت و خرید محصول
-      </button>
-    </div>
+        <!-- btn -->
+        <button type="submit" class="btn btn--primery">
+          پرداخت و خرید محصول
+        </button>
+      </section>
+    </form>
   </body>
 </html>
