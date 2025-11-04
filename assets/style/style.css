@@ -12,6 +12,7 @@
   --color-gray-600: #494a48;
   --color-gray-900: #606060;
   --color-black: #1a1814;
+  --color-black--secondery: #14141466;
 
   --font-family: "IRANSansX";
 }
@@ -22,6 +23,7 @@ html {
 
 body {
   font-family: var(--font-family);
+  background-color: #2f0d0c;
 }
 * {
   /* transition: all ease-in 0.2s; */
@@ -49,9 +51,158 @@ body {
 .send--method .line--desktop {
   margin-bottom: 3.2rem;
 }
+.line--form {
+  display: block;
+  height: 1px;
+  background-color: var(--color-gray-300);
+
+  margin: 1.5rem auto;
+}
 
 @media screen and (min-width: 64rem) {
   .line--mobile {
     display: none;
   }
+}
+
+/* order card */
+.order--card {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-gray-200);
+  cursor: pointer;
+  padding: 1.7rem 0;
+  flex: 0;
+}
+.order--img {
+  width: clamp(7rem, 9vw, 9rem);
+}
+.image--frame {
+  background-color: white;
+  padding: 1.3rem;
+  border-radius: 1.2rem;
+}
+.order--card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card--header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.card--title--wrapper {
+  text-wrap: npwrap;
+}
+.card--footer {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.order--size {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.order--size span {
+  font-weight: 200;
+}
+.card--title {
+  font-size: 1.36rem;
+  font-weight: 700;
+}
+.card--description {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.edit {
+  display: flex;
+  gap: 0.6rem;
+}
+/* icons */
+.trash {
+  width: 1.7rem;
+}
+.circle--icon {
+  width: clamp(3rem, 2vw, 4rem);
+  height: clamp(3rem, 2vw, 4rem);
+  border-radius: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plus {
+  font-size: 2rem;
+  padding-top: 0.37rem;
+  font-weight: 200;
+}
+
+.number {
+  font-size: 1.2rem;
+  padding-top: 0.37rem;
+  font-weight: 500;
+  border: 1px solid var(--color-gray-300);
+  background-color: transparent;
+}
+
+.circle--icon:hover {
+  background-color: var(--color-red-primery--light);
+}
+
+/* total price */
+.total--block {
+  background-color: white;
+  padding: 1.6rem;
+  border-radius: 1.2rem;
+  margin: 2rem auto;
+}
+.total--header {
+  display: grid;
+  gap: 1.2rem;
+}
+.total--header__content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.total--header__title {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--color-black);
+}
+.total--header__price {
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  color: var(--color-black--secondery);
+}
+.total--footer {
+  display: flex;
+  justify-content: space-between;
+}
+.total--footer__title {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: 700;
+  line-height: 1.8;
+  color: var(--color-black);
+}
+.total--footer__price {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: 700;
+  line-height: 1.8;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+.total--footer__price span {
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  color: var(--color-black--secondery);
+  font-weight: 400;
 }
