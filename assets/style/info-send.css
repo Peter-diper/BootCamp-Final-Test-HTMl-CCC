@@ -5,14 +5,17 @@
   margin: 2rem 0;
   padding-left: 0.2rem;
 }
+
 .send--method__header .title {
   font-size: clamp(1.9rem, 3vw, 2.2rem);
   font-weight: 300;
 }
+
 .send--method__header .title span {
   font-weight: 700;
   list-style: 1.8rem;
 }
+
 .badge {
   background-color: var(--color-red-300);
   font-weight: 600;
@@ -29,6 +32,7 @@
   gap: clamp(1.1rem, 2vw, 10.6rem);
   padding-left: 1rem;
 }
+
 .send--method__footer .form--input {
   display: flex;
   align-items: center;
@@ -36,20 +40,29 @@
   border: solid 1px var(--color-gray-200);
 }
 
-.send--method__footer .form--input:hover {
+.send--method__footer .form--input:hover,
+.send--method__footer .form--input:focus {
   background-color: white;
   border: solid 1px var(--color-red-primery);
 }
+
+.send--method__footer .form--input:has(input:checked) {
+  background-color: white;
+  border: solid 1px var(--color-red-primery);
+}
+
 .service--wraper {
   display: flex;
   gap: 0.7rem;
 }
+
 .price {
   font-size: clamp(1.4rem, 2vw, 1.6rem);
   font-weight: 700;
   display: flex;
   gap: 0.5rem;
 }
+
 .price span {
   font-weight: 200;
   font-size: clamp(1.2rem, 2vw, 1.4rem);

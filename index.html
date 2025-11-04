@@ -15,14 +15,29 @@
         <div class="info--wrapper">
           <section class="info--block">
             <h3 class="title">اطلاعات تحویل گیرنده</h3>
+            <div class="line--mobile"></div>
             <div class="info--block__content">
               <div class="form--controler">
-                <h4 class="input--title">نام و نام خانوادگی</h4>
-                <input type="text" class="form--input" />
+                <label for="name" class="input--title"
+                  >نام و نام خانوادگی</label
+                >
+                <input
+                  placeholder="پیتر میلو"
+                  id="name"
+                  type="text"
+                  class="form--input"
+                />
               </div>
               <div class="form--controler">
-                <h4 class="input--title">شماره تماس گیرنده</h4>
-                <input type="text" class="form--input" />
+                <label for="phone" class="input--title"
+                  >شماره تماس گیرنده</label
+                >
+                <input
+                  type="text"
+                  id="phone"
+                  placeholder="09333830000"
+                  class="form--input"
+                />
               </div>
             </div>
           </section>
@@ -34,27 +49,51 @@
             </div>
             <div class="info--block__content">
               <div class="form--controler">
-                <h4 class="input--title">استان</h4>
-                <input type="text" class="form--input" />
+                <label for="state" class="input--title input--list"
+                  >استان</label
+                >
+                <input list="state-choice" id="state" class="form--input" />
+                <datalist id="state-choice">
+                  <option data-value="data1">فارس</option>
+                  <option data-value="data2">تهران</option>
+                  <option data-value="data3">یزد</option>
+                  <option data-value="data4">تبریز</option>
+                </datalist>
               </div>
               <div class="form--controler">
-                <h4 class="input--title">شهر</h4>
-                <input type="text" class="form--input" />
+                <label for="city" class="input--title">شهر</label>
+                <input list="city-choice" id="city" class="form--input" />
+                <datalist id="city-choice">
+                  <option data-value="data1">شیراز</option>
+                  <option data-value="data2">تهران</option>
+                  <option data-value="data3">لار</option>
+                  <option data-value="data4">لطیفی</option>
+                </datalist>
               </div>
             </div>
             <div class="info--block__content">
               <div class="form--controler">
-                <h4 class="input--title">پلاک</h4>
-                <input type="text" class="form--input" />
+                <label for="plack" class="input--title">پلاک</label>
+                <input
+                  placeholder="1"
+                  id="plack"
+                  type="text"
+                  class="form--input"
+                />
               </div>
               <div class="form--controler">
-                <h4 class="input--title">کد پستی</h4>
-                <input type="text" class="form--input" />
+                <label for="post-code" class="input--title">کد پستی</label>
+                <input
+                  placeholder="524125"
+                  id="post-code"
+                  type="text"
+                  class="form--input"
+                />
               </div>
             </div>
             <div class="info--block__content">
-              <h4 class="input--title">نشانی پستی</h4>
-              <textarea class="form--input input--aria" id=""></textarea>
+              <label for="address" class="input--title">نشانی پستی</label>
+              <textarea class="form--input input--aria" id="address"></textarea>
             </div>
           </section>
         </div>
@@ -65,20 +104,34 @@
           </div>
           <div class="line--desktop"></div>
           <div class="send--method__footer">
-            <div class="form--input">
+            <label for="service-radio-tow" class="form--input">
               <div class="service--wraper">
-                <input type="checkbox" class="service--checkbox" />
-                <span class="service">تیپاکس با بیمه (1 تا 3 روز کاری)</span>
+                <input
+                  id="service-radio-tow"
+                  type="radio"
+                  name="service-radio"
+                  class="service--checkbox"
+                />
+                <label for="service-radio-tow" class="service"
+                  >تیپاکس با بیمه (1 تا 3 روز کاری)</label
+                >
               </div>
               <span class="price">۴۵,۰۰۰ <span>تومان</span></span>
-            </div>
-            <div class="form--input">
+            </label>
+            <label for="service-radio" class="form--input">
               <div class="service--wraper">
-                <input type="checkbox" class="service--checkbox" />
-                <span class="service">پست پیشتاز (2 تا 5روز کاری)</span>
+                <input
+                  type="radio"
+                  name="service-radio"
+                  id="service-radio"
+                  class="service--checkbox"
+                />
+                <label for="service-radio" class="service"
+                  >پست پیشتاز (2 تا 5روز کاری)</label
+                >
               </div>
               <span class="price">۸۰,۰۰۰ <span>تومان </span></span>
-            </div>
+            </label>
           </div>
         </div>
       </section>
